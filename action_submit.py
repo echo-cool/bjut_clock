@@ -99,7 +99,7 @@ def submit(s: requests.Session, old: dict):
 
 # 微信通知
 def send_message(key, message, clock_info):
-    send_url = "https://sc.ftqq.com/{}.send?text={}&desp={}".format(key, message, clock_info)
+    send_url = "https://sc.ftqq.com/{}.send?text={}".format(key, message)
     requests.get(send_url)
 
 
