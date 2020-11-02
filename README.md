@@ -1,6 +1,4 @@
 
-脚本有什么问题可发送邮件，进行询问：scwrite678@outlook.com
-
 # bjut_clock
 
 北工大疫情自动打卡脚本（北京工业大学  疫情）
@@ -79,4 +77,6 @@ key ：申请的server的key
 ![](https://github.com/Swenchao/bjut_clock/blob/master/images/4.png)
 
 然后可以随便修改一点地方提交一下也会自动触发，这样可以检验下自己的是否成功。如果成功了就会在每天九点准时打卡了，不过消息推送会推迟10几分钟左右~
+
+**注：**脚本有什么问题可发送邮件，进行询问  scwrite678@outlook.com
 
