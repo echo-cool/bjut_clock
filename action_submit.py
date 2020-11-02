@@ -90,11 +90,11 @@ def submit(s: requests.Session, old: dict):
     if result.get('m') == "操作成功":
         print("打卡成功")
         if server_key != "":
-            send_message(server_key, result.get('m'), new_daily)
+            send_message(server_key, result.get('m'), "打卡成功")
     else:
         print("打卡失败，错误信息: ", r.json().get("m"))
         if server_key != "":
-            send_message(server_key, result.get('m'), new_daily)
+            send_message(server_key, result.get('m'), "打卡失败")
 
 
 # 微信通知
