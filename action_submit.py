@@ -105,12 +105,12 @@ if __name__ == "__main__":
     if (len(usernames) != len(passwords)):
         print("用户名密码数量不一致")
         exit()
-    for username, password in usernames, passwords:
+    for i in range(0, len(usernames)):
         s = requests.Session()
         header = {"User-Agent": "Mozilla/5.0 (Linux; Android 10;  AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/   6.2 TBS/045136 Mobile Safari/537.36 wxwork/3.0.16 MicroMessenger/7.0.1 NetType/WIFI Language/zh", }
         s.headers.update(header)
         # 登录
-        login(s, username, password)
+        login(s, usernames[i], passwords[i])
         # 抓取昨天信息，用于今天提交
         yesterday_data = get_yesterday(s)
         # 提交
